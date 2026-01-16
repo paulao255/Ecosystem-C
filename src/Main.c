@@ -36,9 +36,9 @@ int main(void)
 	while(loop == 1)
 	{
 		clear_terminal();
-		puts("==================================");
-		puts("========== GG ECOSYSTEM ==========");
-		puts("==================================");
+		puts("=================================");
+		puts("========== ECOSYSTEM C ==========");
+		puts("=================================");
 		printf("    %s[ 0 ] Options...%s\n", RED_COLOR, BASE_TERMINAL);
 		printf("    %s[ 1 ] Start ecosystem%s\n", GREEN_COLOR, BASE_TERMINAL);
 		fputs("\t  Your answer: ", stdout);
