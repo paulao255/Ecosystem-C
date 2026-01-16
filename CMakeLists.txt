@@ -9,3 +9,4 @@ FetchContent_Declare(C-Utils GIT_REPOSITORY https://github.com/paulao255/C-Utils
 FetchContent_MakeAvailable(C-Utils)
 add_executable(Executable.exe ../src/Main.c)
 target_link_libraries(Executable.exe PRIVATE C-Utils::C-Utils)
+file(COPY ${CMAKE_SOURCE_DIR}/README.md ${CMAKE_SOURCE_DIR}/LICENSE DESTINATION ${CMAKE_BINARY_DIR})
