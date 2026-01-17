@@ -56,8 +56,9 @@ int main(void)
 				puts("=========================================");
 				printf("    %s[ 0 ] Go back%s\n", BOLD, BASE_TERMINAL);
 				printf("    %s[ 1 ] Exit...%s\n", RED_COLOR, BASE_TERMINAL);
-				printf("    %s[ 2 ] Read \"READ-ME\"%s\n", YELLOW_COLOR, BASE_TERMINAL);
-				printf("    %s[ 3 ] Change the numbers%s\n", GREEN_COLOR, BASE_TERMINAL);
+				printf("    %s[ 2 ] Read \"READ-ME\"%s\n", CYAN_COLOR, BASE_TERMINAL);
+				printf("    %s[ 3 ] Read \"LICENSE\"%s\n", YELLOW_COLOR, BASE_TERMINAL);
+				printf("    %s[ 4 ] Change the numbers%s\n", GREEN_COLOR, BASE_TERMINAL);
 				fputs("\t  Your answer: ", stdout);
 				scanf("%8191s", option);
 
@@ -80,6 +81,13 @@ int main(void)
 				}
 
 				else if(strcmp(option, "3") == 0)
+				{
+					clear_terminal();
+					rlf();
+					clear_terminal();
+				}
+
+				else if(strcmp(option, "4") == 0)
 				{
 					clear_terminal();
 					fputs("Type the X number and the Y number both with a space between them: ", stdout);
